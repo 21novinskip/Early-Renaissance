@@ -1,0 +1,49 @@
+.collage-container {
+    position: relative;
+    width: 800px; /* Set the width of your collage */
+    height: 600px; /* Set the height of your collage */
+    margin: 0 auto; /* Center the collage */
+}
+
+.collage-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure each layer covers the entire collage area */
+    height: 100%;
+    cursor: pointer;
+    transition: filter 0.3s; /* Smooth transition for the filter effect */
+}
+
+.legend-info {
+    display: none; /* Hide all info by default */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.legend-info.active {
+    display: block;
+}
+
+#hover-legend {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    z-index: 1000; /* Ensure the hover info box is on top */
+}
+
+.hover-info {
+    display: none; /* Hide all hover info by default */
+}
+
+.hover-info.active {
+    display: block; /* Show hover info when active */
+}
+
+.grayed-out {
+    filter: grayscale(75%); /* Apply grayscale filter */
+}
+
